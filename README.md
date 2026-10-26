@@ -1,6 +1,6 @@
 # whereti.releases
 
-The update endpoint for [whereti](https://github.com/whereti/whereti), running
+The update endpoint for [whereti](https://github.com/whereti/app), running
 at `releases.whereti.com` as a Cloudflare Worker. Same design as
 releases.silentsilo.com.
 

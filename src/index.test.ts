@@ -11,7 +11,7 @@ const MANIFEST = {
   pub_date: "2026-11-01T10:00:00Z",
   platforms: {
     "windows-x86_64": {
-      url: "https://github.com/whereti/whereti/releases/download/v0.2.0/whereti-setup-0.2.0.exe",
+      url: "https://github.com/whereti/app/releases/download/v0.2.0/whereti-setup-0.2.0.exe",
       sha256: "ab".repeat(32),
       size: 31_000_000,
     },
