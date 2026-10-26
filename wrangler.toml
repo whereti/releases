@@ -1,0 +1,27 @@
+name = "whereti-releases"
+main = "src/index.ts"
+compatibility_date = "2026-07-01"
+
+# Top-level on purpose: TOML is positional, and anything after a [table]
+# header belongs to that table.
+routes = [
+  { pattern = "releases.whereti.com", custom_domain = true }
+]
+
+# The manifest lives in KV under the key "latest". Create the namespace once
+# with `npx wrangler kv namespace create RELEASES` and paste the id it prints.
+kv_namespaces = [
+  { binding = "RELEASES", id = "TODO_PASTE_NAMESPACE_ID" }
+]
+
+# whereti is a Windows program: Intel/AMD and ARM.
+[vars]
+TARGETS = "windows"
+ARCHS = "x86_64,aarch64"
+MANIFEST_CACHE_TTL_SECONDS = "60"
+
+# Every update check writes one datapoint here: platform, installed
+# version, outcome. Nothing that identifies a machine or a person.
+[[analytics_engine_datasets]]
+binding = "UPDATE_CHECKS"
+dataset = "whereti_update_checks"
