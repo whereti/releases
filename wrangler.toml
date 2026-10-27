@@ -12,7 +12,7 @@ routes = [
 # with `npx wrangler kv namespace create whereti-releases` and paste the id it
 # prints. Not "RELEASES": that title is silentsilo's namespace, same account.
 kv_namespaces = [
-  { binding = "RELEASES", id = "TODO_PASTE_NAMESPACE_ID" }
+  { binding = "RELEASES", id = "cd9f955e96e945fbb504337ace50ec3c" }
 ]
 
 # whereti is a Windows program: Intel/AMD and ARM.
