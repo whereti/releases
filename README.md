@@ -63,8 +63,10 @@ npm run typecheck
 npm run dev       # local worker, local KV
 ```
 
-Before the first deploy: `npx wrangler kv namespace create RELEASES` and paste
-the id into `wrangler.toml`.
+Before the first deploy: `npx wrangler kv namespace create whereti-releases` and
+paste the id into `wrangler.toml`. The name matters: the Cloudflare account also
+holds silentsilo's namespace, titled `RELEASES`. The binding stays `RELEASES`
+(bindings belong to each worker).
 
 ## Licence
 
